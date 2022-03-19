@@ -2,7 +2,7 @@ pipeline {
 
   environment {
     PROJECT = "indigo-history-337312"
-    APP_NAME = "adservice"
+    APP_NAME = "shippingservice"
     FE_SVC_NAME = "${APP_NAME}-frontend"
     CLUSTER = "way2die"
     CLUSTER_ZONE = "us-central1-c"
