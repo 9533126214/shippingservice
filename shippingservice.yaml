@@ -28,7 +28,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: gcr.io/indigo-history-337312/shippingservice:latest
+        image: gcr.io/srinag/shippingservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -62,7 +62,7 @@ kind: Service
 metadata:
   name: shippingservice
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: shippingservice
   ports:
